@@ -1,0 +1,47 @@
+{
+    "folders": [
+        {
+            "path": ".",
+            "name": "Root"
+        },
+        {
+            "path": "src",
+            "name": "Source Code"
+        },
+        {
+            "path": "docs",
+            "name": "Documentation"
+        }
+    ],
+    "settings": {
+        "files.exclude": {
+            "docs": true,
+            "src": true
+        },
+        "liveServer.settings.multiRootWorkspaceName": "src"
+    },
+    "tasks": {
+        "version": "2.0.0",
+        "tasks": [
+            {
+                "label": "Butler: Build",
+                "type": "shell",
+                "command": "butler",
+                "args": [
+                    "push",
+                    "./src",
+                    "HoleInOneGolfer/corrupt-space-defender:html"
+                ],
+                "problemMatcher": [],
+                "group": {
+                    "kind": "build",
+                    "isDefault": true
+                }
+            }
+        ]
+    },
+    "launch": {
+        "configurations": [],
+        "compounds": []
+    }
+}

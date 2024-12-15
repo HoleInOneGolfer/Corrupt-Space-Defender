@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'space';
+    src: url('./assets/font/space age.ttf');
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: gray;
+}
+
+body {
+    margin: auto;
+    padding: 0;
+}
+
+canvas {
+    background-color: white;
+
+    cursor: none;
+}
